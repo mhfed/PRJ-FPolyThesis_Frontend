@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function AuthenticationPage() {
+  const a = 1;
   return (
     <>
       <div className='md:hidden'>
