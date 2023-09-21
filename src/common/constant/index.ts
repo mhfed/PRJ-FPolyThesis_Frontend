@@ -1,0 +1,4 @@
+export enum EXAMPLE {
+  APP = 'APP_',
+  AUTHENTICATION = 'AUTHENTICATION_',
+}
