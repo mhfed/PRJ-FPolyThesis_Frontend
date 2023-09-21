@@ -1,0 +1,20 @@
+{
+  // Skip spell checking those words in the project
+  "cSpell.words": ["FPOLY", "lefthook", "tailwindcss", "lucide", "clsx"],
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  }
+}

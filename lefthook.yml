@@ -1,0 +1,19 @@
+commit-msg:
+  scripts:
+    'verify-commit-msg':
+      runner: bash
+pre-commit:
+  piped: true
+  commands:
+    linter:
+      glob: '*.{ts,tsx,js}'
+      run: npx eslint {staged_files}
+    prettier:
+      glob: '*.{ts,tsx,js}'
+      run: npx prettier {staged_files} --check --ignore-path .gitignore .
+    type-check:
+      glob: '*.{ts,tsx,js}'
+      run: yarn tsc --noEmit --skipLibCheck
+  scripts:
+    'verify-author':
+      runner: bash
