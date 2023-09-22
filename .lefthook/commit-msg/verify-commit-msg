@@ -1,7 +1,7 @@
 INPUT_FILE=$1
 START_LINE=`head -n1 $INPUT_FILE`
 
-TYPE="feat|fix|build|refactor|doc|chore|ci|style|test|perf|revert"
+TYPE="feat|fix|build|refactor|docs|chore|ci|style|test|perf|revert"
 
 PATTERN="^($TYPE)\: "
 
